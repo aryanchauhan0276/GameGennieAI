@@ -1,3 +1,5 @@
+# GameGennieAI
+
 # Problem Statement -  AI-Powered Game Discovery Platform:
 Finding the perfect game can be difficult, especially with thousands of titles available across
 different platforms. At the same time, creating a custom game often requires programming
@@ -11,7 +13,7 @@ games, and, where feasible, generate a simple playable game based on the user's 
 The solution should provide personalized recommendations, an intuitive user experience,
 and support a wide variety of game genres and play styles.
 
-# Solution -  BuildWave
+# Solution -  GameGennieAI
 This solution address the problem statement by utilizing open source libraries & models available. This solution takes the dataset from Kaggle mentioned as “playstore_games_with_descriptions.csv” which consists over 15000+ recrords. Then, continues to use sentence transformers available on hugging face to embedded the text into numericals and then these numericals are scaled down using the FAISS library from facebook to optimize the model.
 The user input is embedded using the same hugging face transformers and using semantic search and Keybert the recommendation is generated.
 
