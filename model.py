@@ -7,7 +7,7 @@ from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 
 
-CSV_FILE = "playstore_games_with_descriptions.csv"
+CSV_FILE = "DataSet/playstore_games_with_descriptions.csv"
 EMBEDDINGS_FILE = "gameembeddings.npy"
 
 
