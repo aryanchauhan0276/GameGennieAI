@@ -1,0 +1,358 @@
+/* ============================= */
+/*         GAMEGENIE AI          */
+/*        Premium UI CSS         */
+/* ============================= */
+
+.main{
+    position:relative;
+    color:white;
+}
+
+/* ---------- Background Glow ---------- */
+
+.main::before{
+    content:"";
+    position:fixed;
+    width:520px;
+    height:520px;
+    top:-180px;
+    left:-180px;
+    border-radius:50%;
+    background:#7C3AED;
+    filter:blur(150px);
+    opacity:.18;
+    z-index:-1;
+}
+
+.main::after{
+    content:"";
+    position:fixed;
+    width:450px;
+    height:450px;
+    bottom:-160px;
+    right:-160px;
+    border-radius:50%;
+    background:#2563EB;
+    filter:blur(140px);
+    opacity:.15;
+    z-index:-1;
+}
+
+/* ---------- Scrollbar ---------- */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0F172A;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#7C3AED;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#8B5CF6;
+}
+
+/* ---------- Titles ---------- */
+
+.main-title{
+
+    text-align:center;
+
+    font-size:64px;
+
+    font-weight:900;
+
+    color:white;
+
+    margin-top:10px;
+
+    margin-bottom:5px;
+
+    letter-spacing:.5px;
+
+}
+
+.sub-title{
+
+    text-align:center;
+
+    color:#CBD5E1;
+
+    font-size:22px;
+
+    margin-bottom:35px;
+
+}
+
+/* ---------- Metric Cards ---------- */
+
+.metric-card{
+
+background:rgba(17,24,39,.72);
+
+border:1px solid rgba(255,255,255,.12);
+
+backdrop-filter:blur(18px);
+
+border-radius:22px;
+
+padding:28px 20px;
+
+height:180px;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+transition:.35s;
+
+}
+
+.metric-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 0 25px rgba(124,58,237,.45);
+
+border:1px solid #8B5CF6;
+
+}
+
+.metric-icon{
+
+font-size:48px;
+
+margin-bottom:12px;
+
+}
+
+.metric-number{
+
+font-size:38px;
+
+font-weight:800;
+
+color:white;
+
+}
+
+.metric-text{
+
+font-size:17px;
+
+color:#CBD5E1;
+
+margin-top:6px;
+
+}
+
+/* ---------- Search Box ---------- */
+
+.search-box{
+
+    background:rgba(20,25,45,.70);
+
+    border-radius:28px;
+
+    padding:30px;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    backdrop-filter:blur(18px);
+
+    margin-top:30px;
+
+    margin-bottom:20px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.28);
+
+}
+
+/* ---------- Buttons ---------- */
+
+.stButton>button{
+
+height:72px;
+
+font-size:19px;
+
+font-weight:700;
+
+border-radius:22px;
+
+background:linear-gradient(135deg,#9333EA,#2563EB);
+
+border:none;
+
+transition:.35s;
+
+box-shadow:0 10px 25px rgba(124,58,237,.35);
+
+}
+
+.stButton>button:hover{
+
+transform:translateY(-6px) scale(1.03);
+
+box-shadow:0 18px 45px rgba(37,99,235,.45);
+
+background:linear-gradient(135deg,#A855F7,#3B82F6);
+
+}
+
+/* ---------- Text Area ---------- */
+
+textarea{
+
+    background:rgba(238, 147, 147, 0.08)!important;
+
+    color:rgb(221, 213, 213)!important;
+
+    border-radius:18px!important;
+
+    border:1px solid rgba(241, 236, 236, 0.877)!important;
+
+    font-size:16px!important;
+
+}
+
+/* ---------- Recommendation Cards ---------- */
+
+.game-card{
+
+    background:rgba(20,25,45,.75);
+
+    border-radius:22px;
+
+    padding:24px;
+
+    margin-top:18px;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    backdrop-filter:blur(20px);
+
+    transition:.35s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+}
+
+.game-card:hover{
+
+    transform:translateY(-5px);
+
+    border:1px solid #8B5CF6;
+
+    box-shadow:0 18px 45px rgba(124,58,237,.35);
+
+}
+
+.game-title{
+
+    color:white;
+
+    font-size:27px;
+
+    font-weight:800;
+
+    margin-bottom:12px;
+
+}
+
+.badge{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    background:linear-gradient(90deg,#8B5CF6,#2563EB);
+
+    color:white;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    box-shadow:0 5px 18px rgba(124,58,237,.35);
+
+}
+
+/* ---------- Images ---------- */
+
+img{
+
+    border-radius:20px;
+
+}
+
+/* ---------- Headers ---------- */
+
+h1,h2,h3,h4{
+
+    color:white!important;
+
+}
+
+/* ---------- Success ---------- */
+
+.stAlert{
+
+    border-radius:18px!important;
+
+}
+
+/* ---------- Footer ---------- */
+
+.footer{
+
+    text-align:center;
+
+    color:#94A3B8;
+
+    margin-top:40px;
+
+    font-size:15px;
+
+}
+
+/* ---------- Animation ---------- */
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-6px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+.metric-card{
+
+    animation:float 5s ease-in-out infinite;
+
+}
