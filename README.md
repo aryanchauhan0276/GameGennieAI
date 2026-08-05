@@ -1,5 +1,4 @@
 # GameGennieAI 
-# Live Link - https://gamegennieai.streamlit.app/
 
 # Problem Statement -  AI-Powered Game Discovery Platform:
 Finding the perfect game can be difficult, especially with thousands of titles available across
